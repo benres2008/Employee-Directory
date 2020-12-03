@@ -15,8 +15,7 @@ function App() {
     <div className="App">
       <h1>Employee Directory</h1>
       <p>
-        To filter by first name, please begin your search in the user input
-        below
+        Type in user input below to sort employees by name
       </p>
       <FilterInput users={initialUsers} updateUsers={updateUsersToRender} />
       <Table users={usersToRender} />
