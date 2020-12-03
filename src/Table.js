@@ -42,14 +42,14 @@ const Table = ({ users }) => {
             <th scope="col">city</th>
             <th scope="col">state</th>
             <th scope="col">country</th>
-            <th scope="col">postcode</th>
+            <th scope="col">zipcode</th>
             <th scope="col">picture</th>
           </tr>
         </thead>
         <tbody>
           {sortedUsers.map(
             ({
-              location: { city, state, country, postcode },
+              location: { city, state, country, zipcode },
               picture: { thumbnail },
               cell,
               phone,
@@ -68,12 +68,10 @@ const Table = ({ users }) => {
                 <td>{city}</td>
                 <td>{state}</td>
                 <td>{country}</td>
-                <td>{postcode}</td>
+                <td>{zipcode}</td>
                 <td>
                   <img src={thumbnail} />
                 </td>
-
-                <td></td>
               </tr>
             )
           )}
